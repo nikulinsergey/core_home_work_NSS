@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+    
+    ol
+    {
+        margin: 100px;
+        list-style: upper-roman;
+    }
+
+    ol li
+    {
+        position: relative;
+        margin: 20px 0;
+    }
+
+    ol li::before
+    {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 30px;
+        background: #ccc;
+        position: absolute; top: -5px; left: -30px;
+        z-index: -1;
+    }
+    
+    
+    </style>
+
+    <ol>
+         <li>item1</li>
+         <li>item2</li>
+         <li>item3</li>
+         <li>item4</li>
+         <li>item5</li>        
+    </ol>
+</body>
+</html>
