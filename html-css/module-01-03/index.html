@@ -4,55 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <title>module-01-03</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto" rel="stylesheet">
 </head>
-
 <body>
-   
-    <header>
-        <div class="container">
-            <nav>
-                <a href="#">lifestyle</a>
-                <a href="#">photografy</a>
-                <a href="#">music</a>
-                <a href="#">travel</a>
-            </nav>
-        </div>
-    </header>
+    <header class="header">
+        <nav class="navigation">
+            <ul class="navigation_links">
+               <li class="punkt">
+                   <a href="#" class="link">lifestyle</a>
+               </li>
+               <li class="punkt">
+                   <a href="#" class="link">photodiary</a>
+               </li>
+               <li class="punkt">
+                   <a href="#" class="link">music</a>
+               </li>
+               <li class="punkt">
+                   <a href="#" class="link">travel</a>
+               </li>
+            </ul>
+        </nav>
+     </header>
+    <main class="content">
+    <article class="post left">
+        <img class="post_img" src="/img/image1.png" alt="people" width="420">
+            <span class="post_tag">lifestyle</span>
+            <h2>More than just a music festival</h2>
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt expedita minima, eius officiis tempora iste, placeat laudantium vel, velit ratione illum ab soluta dignissimos nemo voluptatum. Nostrum nobis nam veritatis!</p>
+    </article>
 
-    <div class="blog">
-        <div class="container">
-            <div class="flex">
-            <article>
-                <img src="img/image1.png" alt="">
-                <p class="blog_title">Lifestyle</p>
-                <h3>More then a music festival</h3>
-                <p class="blog_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, maxime neque. Sit quo iste perferendis, explicabo nostrum necessitatibus aut alias est libero sunt quia dicta laborum consequatur id aspernatur enim?</p>
-            </article>
-            <article>
-                    <img src="img/image2.jpg" alt="">
-                    <p class="blog_title">lifestyle</p>
-                    <h3>Life tastes better with coffee</h3>
-                    <p class="blog_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur quod molestiae, at eum, eveniet voluptatibus soluta sit quae inventore laborum fuga cupiditate! Magnam mollitia vitae dicta in sed qui totam.</p>
-            </article>
-            <article>
-                    <img src="img/image3.jpg" alt="">
-                    <p class="blog_title">photodiary</p>
-                    <h3>American dream</h3>
-                    <p class="blog_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ratione, aliquam quasi nam placeat possimus minima alias fuga ut, sapiente inventore magni illo omnis libero maxime. Totam inventore porro magni.</p>
-            </article>
-            <article>
-                    <img src="img/image4.jpg" alt="">
-                    <p class="blog_title">photodiary</p>
-                    <h3>A day exploring the Alps</h3>
-                    <p class="blog_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum distinctio quos unde nesciunt ratione facilis perferendis, ea dolorem adipisci quaerat voluptatibus. Tempora quis suscipit fugit debitis, quae quia beatae expedita.</p>
-            </article>
-            </div>
-            <button>Load more</button>
-        </div>
-    </div>
 
+    <article class="post right">
+        <img class="post_img" src="/img/image2.jpg" alt="coffee" width="420">
+            <span class="post_tag">lifestyle</span>
+             <h2>Life tastes better with coffee</h2>
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt expedita minima, eius officiis tempora iste, placeat laudantium vel, velit ratione illum ab soluta dignissimos nemo voluptatum. Nostrum nobis nam veritatis!</p>
+    </article>
+
+
+    <article class="post left"> 
+        <img class="post_img" src="/img/image3.jpg" alt="girls" width="420">
+            <span class="post_tag">photodiary</span>
+            <h2>American dream</h2>
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt expedita minima, eius officiis tempora iste, placeat laudantium vel, velit ratione illum ab soluta dignissimos nemo voluptatum. Nostrum nobis nam veritatis!</p>
+    </article>
+
+
+    <article class="post right">
+        <img class="post_img" src="/img/image.png" alt="man in Alps" width="420">
+            <span class="post_tag">photodiary</span>
+            <h2>A day exploring the Alps</h2>
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt expedita minima, eius officiis tempora iste, placeat laudantium vel, velit ratione illum ab soluta dignissimos nemo voluptatum. Nostrum nobis nam veritatis!</p>
+    </article>
+
+    <article class="post left">
+        <img class="post_img" src="/img/image5.png" alt="girl in road" width="420">
+            <span class="post_tag">photodiary</span>
+            <h2>Top 10 song for running</h2>
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt expedita minima, eius officiis tempora iste, placeat laudantium vel, velit ratione illum ab soluta dignissimos nemo voluptatum. Nostrum nobis nam veritatis!</p>
+    </article>
+
+    <article class="post right">
+        <img class="post_img" src="/img/image6.png" alt="road" width="420">
+            <span class="post_tag">photodiary</span>
+            <h2>Cold winter days</h2>
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt expedita minima, eius officiis tempora iste, placeat laudantium vel, velit ratione illum ab soluta dignissimos nemo voluptatum. Nostrum nobis nam veritatis!</p>
+    </article>
+
+
+    <button class="button">Load more</button>
+
+    </main>
+    
 </body>
 </html>
