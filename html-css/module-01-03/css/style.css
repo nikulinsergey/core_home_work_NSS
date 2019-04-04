@@ -2,17 +2,38 @@
 padding: 0;
 border: 0;
 margin: 0 auto;
+outline: 1px solid red;
 }
 
 body {
     display: block;
-    margin-left: 50px;
+    margin-left: 0 auto;
     width: 900px;
 }
 
 .menu a:hover,
 .menu a:focus {
     color: #44b6f5;
+}
+
+.menu {
+    width: 900px;
+    margin: 50px 0 56px;
+    text-align: center; 
+}
+.menu-item {
+    display: inline-block;
+}
+.menu-link, .menu-link1{
+    display: block;
+    margin-right: 75px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 13px;
+    color: #626262;
+}
+.menu-link1 {
+    margin-right: 0;
 }
 
 .item {
@@ -32,6 +53,10 @@ body {
     margin-left: 56px;
 }
 
-.main-menu {
-    margin: 0;
+
+span {
+    text-transform: uppercase;
+    font-size: 11px;
+    margin: 32px 0px 32px;
 }
+
