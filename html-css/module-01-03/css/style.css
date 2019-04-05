@@ -1,62 +1,111 @@
-* {
-padding: 0;
-border: 0;
-margin: 0 auto;
-outline: 1px solid red;
+*{
+    padding: 0;
 }
 
-body {
-    display: block;
-    margin-left: 0 auto;
+.navigation{
+    text-transform: uppercase;
+}
+
+.navigation_links{
+    list-style-type: none;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.header, .content{
     width: 900px;
+    margin: 0 auto;
 }
 
-.menu a:hover,
-.menu a:focus {
-    color: #44b6f5;
+.header{
+    padding-top: 78px;
+    padding-bottom: 104px;
 }
 
-.menu {
-    width: 900px;
-    margin: 50px 0 56px;
-    text-align: center; 
+.link{
+    text-decoration: none;
+    color: black;
 }
-.menu-item {
+
+.link:hover {
+        color: #25b4f5;      
+}
+
+
+.navigation_links > li{
     display: inline-block;
 }
-.menu-link, .menu-link1{
-    display: block;
-    margin-right: 75px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 13px;
-    color: #626262;
+
+
+.punkt{
+    margin-right: 62px;
 }
-.menu-link1 {
+
+.punkt:last-child{
     margin-right: 0;
 }
 
-.item {
-    list-style-type: none;
-    height: 475px;
-    margin: auto;
+.post_img{
+    margin-bottom: 32px;
 }
 
-.section-left,
-.section-right {
+.post_tag{
+    margin-bottom: 32px;
+    font-size: 14px;
+    font-family: "Ubuntu";
+    color: rgb(180, 173, 158);
+    text-transform: uppercase;
+}
+
+h2{
+    margin-bottom: 36px;
+    font-size: 30px;
+    font-family: "PlayfairDisplay";
+    color: rgb(98, 98, 98);
+}
+
+p{
+    font-size: 14px;
+    font-family: "PlayfairDisplay";
+    color: rgb(98, 98, 98);
+}
+      
+     
+
+.post{
     width: 420px;
+    margin-bottom: 132px;
     display: inline-block;
 }
 
-.section-right {
-    margin-top: 0;
-    margin-left: 56px;
+
+.right{
+    margin-left: 59px;
 }
 
+.button{
+    display: block;
+    margin: 0 auto 70px;
+    font-size: 20px;
+    font-family: "Myriad Pro";
+    color: rgb(98, 98, 98);
+    width: 162px;
+    height: 60px;
+    border-color: rgb(98, 98, 98);
+    border-style: solid; 
+  }
 
-span {
-    text-transform: uppercase;
-    font-size: 11px;
-    margin: 32px 0px 32px;
-}
+  .button:hover{
+      background-color: brown;
+  }
+
+  .content{
+      font-size: 0;
+  }
+
+  
+  
+  
+
 
