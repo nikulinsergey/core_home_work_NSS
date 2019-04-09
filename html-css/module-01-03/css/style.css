@@ -10,7 +10,7 @@
     list-style-type: none;
     margin: 0 auto;
     text-align: center;
-
+    font-size: 0;
 }
 
 .header, .content{
@@ -24,6 +24,7 @@
 }
 
 .link{
+    font-size: 14px;
     text-decoration: none;
     color: black;
 }
@@ -57,6 +58,10 @@
     color: rgb(180, 173, 158);
     text-transform: uppercase;
 }
+.name_tag{
+    margin: 0;
+    margin-bottom: 42px;
+}
 
 h2{
     margin-bottom: 36px;
@@ -66,6 +71,7 @@ h2{
 }
 
 p{
+    margin: 0;
     font-size: 14px;
     font-family: "PlayfairDisplay";
     color: rgb(98, 98, 98);
@@ -86,14 +92,15 @@ p{
 
 .button{
     display: block;
-    margin: 0 auto 70px;
+    margin: 0 auto;
     font-size: 20px;
     font-family: "Myriad Pro";
     color: rgb(98, 98, 98);
     width: 162px;
-    height: 60px;
+    height: 62px;
     border-color: rgb(98, 98, 98);
-    border-style: solid; 
+    border-style: solid;
+    margin-bottom: 62px; 
   }
 
   .button:hover{
