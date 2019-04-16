@@ -1,0 +1,78 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.header {
+    width: 1110px;
+    margin: 0 auto;
+    padding-top: 39px;
+    outline: 1px solid red;
+}
+
+.site-logo {
+    float: left;
+    vertical-align: middle;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* site navigation*/
+.site-navigation {
+    vertical-align: middle;
+    float: right;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    text-transform: uppercase;
+
+}
+
+.site-navigation li {
+    display: inline-block;
+}
+
+.site-navigation a {
+    text-decoration: none;
+    color: #0f0101;
+    font-weight: bold;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: #1abc9c;
+}
+    
+ 
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.site-navigation li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.conteiner {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.products {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 48px;
+    font-family: "Roboto";
+    color: rgb(81, 81, 81);
+    text-transform: uppercase;
+}

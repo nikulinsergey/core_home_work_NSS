@@ -99,8 +99,7 @@ p{
     width: 162px;
     height: 62px;
     border-color: rgb(98, 98, 98);
-    border-style: solid;
-    margin-bottom: 62px; 
+    border-style: solid; 
   }
 
   .button:hover{
@@ -109,6 +108,7 @@ p{
 
   .content{
       font-size: 0;
+      padding-bottom: 62px;
   }
 
   
