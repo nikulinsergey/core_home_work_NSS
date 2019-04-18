@@ -8,16 +8,9 @@ html {
     box-sizing: inherit;
 }
 
-.header {
-    width: 1110px;
-    margin: 0 auto;
-    padding-top: 39px;
-    outline: 1px solid red;
-}
-
-.site-logo {
-    float: left;
-    vertical-align: middle;
+body {
+    font-family: "Roboto", sans-serif;
+    color: #515151;
 }
 
 img {
@@ -26,53 +19,124 @@ img {
     height: auto;
 }
 
-/* site navigation*/
-.site-navigation {
-    vertical-align: middle;
-    float: right;
-    margin: 0;
-    padding: 0;
-    font-size: 12px;
-    text-transform: uppercase;
-
+.container {
+    width: 1110px;
+    margin: 0 auto;
+    background: burlywood;
 }
 
+.page-header {
+    background-color: blanchedalmond;
+}
+
+.page-nav {
+    padding: 38px 0 0;
+}
+
+.site-logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+/* site navigation*/
+
+.site-navigation{
+    display: inline-block;
+    vertical-align: middle;
+    width: 1030px;
+    background-color: blueviolet;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    list-style: none;
+    text-align: right;
+}
 .site-navigation li {
     display: inline-block;
 }
-
-.site-navigation a {
-    text-decoration: none;
+.site-navigation li:not(:last-child) {
+    padding: 0 15px;
+}
+.contact {
+    padding-left: 15px;
+}
+.site-navigation a{
     color: #0f0101;
     font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 16px;
 }
+
 
 .site-navigation a:hover,
 .site-navigation a:focus {
     color: #1abc9c;
 }
-    
- 
-.clearfix::after {
-    display: table;
-    content: '';
-    clear: both;
-}
 
-.site-navigation li:not(:last-child) {
-    margin-right: 30px;
-}
+/* featured product */
 
-.conteiner {
-    width: 1110px;
-    margin: 0 auto;
-}
-
-.products {
+.features-title {
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
     margin: 0 auto;
     padding: 0;
     font-size: 48px;
-    font-family: "Roboto";
-    color: rgb(81, 81, 81);
-    text-transform: uppercase;
+    color: rgb(85, 82, 82);
 }
+
+.wrapper {
+    background-color: rgb(78, 198, 171);
+    width: 164px;
+    height: 7px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.features-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+.features-list-item {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.features-list-item:nth-of-type(4n) {
+    margin-right: 0;
+}   
+
+
+/* latest news */
+
+.title-news {
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 48px;
+    color: rgb(85, 82, 82);
+}
+
+.news-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.news-list-item {
+    display: inline-block;
+    margin-right: 26px;
+}
+
+.news-list-item:last-child {
+    margin-right: 0;
+}
+    
+
