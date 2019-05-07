@@ -49,7 +49,6 @@ img {
 
 .site-navigation {
     float: right;
-    width: 475px;
     vertical-align: middle;
     margin: 0;
     padding: 0;
@@ -95,18 +94,20 @@ img {
     text-align: center;
     line-height: 48px;
     margin: 0 auto;
-    padding-top: 100px;
-    padding-bottom: 24px;
+    padding-top: 105px;
     font-size: 48px;
+    margin-bottom: 92px;
 }
 
-.wrapper, .wrapper2 {
+.features-title::after, .title-news::after {
+    display: block;
+    content: '';
     background-color: rgb(78, 198, 171);
     width: 164px;
     height: 7px;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 92px;
+    margin-top: 32px;
 }
 
 .features-list {
@@ -204,25 +205,28 @@ img {
     font-size: 18px;
     font-family: "OpenSans";
     color: rgb(85, 82, 82);
-    margin: 0;
-    padding: 16px 0 15px;
+    margin: 16px 0;
+    padding: 0;
 }
 
-.wrapper3 {
-    border-radius: 3px;
+.info::after {
+    display: block;
+    content: '';
     width: 136px;
     height: 3px;
     background-color: rgb(78, 198, 171);
+    margin-top: 15px;
 }
 
 
 .paragraph {
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 0 auto;
     font-size: 14px;
     font-family: "OpenSans";
     color: rgb(85, 82, 82);
-    line-height: 30px;
+    line-height: 1.4;
+    margin-bottom: 16px;
 }
 
 
