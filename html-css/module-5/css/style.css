@@ -273,6 +273,7 @@ img {
     height: 282px;
     width: 255px;
     display: none;
+    background-color: rgba(0, 0, 0, 0.549);
 }
 
 .card:hover .overley {
