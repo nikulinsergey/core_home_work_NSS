@@ -80,7 +80,6 @@ html {
 
 body {
     background-color: #222222;
-    width: 1400px;
     margin: 0 auto;
 }
 
@@ -164,10 +163,10 @@ header{
     text-align: center;
 }
     
-
+/* 
 .section1 {
     padding-bottom: 50px;
-}
+} */
 
 
 /* SECTION 2 */
@@ -200,6 +199,7 @@ h4 {
     line-height: 1.2;
 }
 
+
 .circle1, 
 .circle2,
 .circle3 {
@@ -229,7 +229,7 @@ h4 {
 
 
 
-.section2 {
+.service {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
