@@ -1,0 +1,184 @@
+
+
+.conteiner-fluid {
+    background-size: cover;
+    background-color: #000;
+    background-image: url(../img/Vector\ Smart\ Object.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    padding-bottom: 140px;
+}
+
+.conteiner {
+    max-width: 100%;          
+}
+
+h1 {
+    display: block;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.945);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+.LogIn,
+.SignUp {
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgba(255, 255, 255, 0.795);
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid transparent;
+    text-decoration: none;
+
+}
+
+.in-up {
+    margin-bottom: 110px;
+}
+
+.LogIn:hover,
+.SignUp:hover {
+    width: 94px;
+    height: 40px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 40px;
+    text-decoration: none;
+}
+
+.Logo {
+    font-size: 20px;
+    font-family: "Montserrat";
+    color: rgba(255, 255, 255, 0.795);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navigation {
+    margin-bottom: 30px;
+}
+
+.paragraph {
+    font-size: 18px;
+    font-family: "Roboto";
+    color: rgba(255, 255, 255, 0.705);
+    line-height: 1.2;
+}
+
+
+.general {
+    padding: 0;
+}
+
+
+.button1,
+.button2 {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    width: 250px;
+    height: 40px;
+    background-color: #ff4e50;
+    border-radius: 20px;
+}
+
+
+.button2 {
+    margin: 0 auto;
+}
+
+
+h2 {
+    font-size: 21px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+    text-align: center;
+}
+
+.info {
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgb(102, 102, 102);
+    font-weight: 300;
+    text-align: center;
+}
+
+
+.face {
+    position: relative;
+    width: 122px;
+    height: 122px;
+    margin-bottom: 20px;
+
+} 
+
+
+
+/* CARDS */
+.face {
+    position: relative;
+    width: 122px;
+    height: 122px;
+    margin-bottom: 20px;
+
+} 
+
+.mini-img1, 
+.mini-img2,
+.mini-img3,
+.mini-img4  {
+    position: absolute;
+    bottom: 0;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    right: 0;
+    width: 33px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mini-img1 {
+    background: #ff4e50;
+} 
+
+.mini-img2 {
+    background: #dfb43e;
+} 
+
+.mini-img3 {
+    background: #0aaf33;
+} 
+
+.mini-img4 {
+    background: #333ed8;
+} 
+
+.block2 {
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+
+.all-card {
+    margin: 0 auto;
+}
+
+main {
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+.button2 {
+    padding: 0;
+}
+
+
