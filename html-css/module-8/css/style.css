@@ -39,7 +39,10 @@ html {
     padding-bottom: 30px
 }
 
-.face {
+.face-1,
+.face-2,
+.face-3,
+.face-4 {
     position: relative;
     width: 122px;
     height: 122px;
@@ -47,26 +50,72 @@ html {
 
 } 
 
-img {
+.face-1::before {
     display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-.mini-img {
+    content: '';
+    background-size: cover;
+    background: #ff4e50;
+    background-image: url(../img/Colb.png);
+    background-repeat: no-repeat;
+    background-position: center;
     position: absolute;
     bottom: 0;
-    background: #ff4e50;
     border-radius: 50%;
     border: 3px solid #ffffff;
     right: 0;
     width: 33px;
     height: 33px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+} 
 
+.face-2::before {
+    display: block;
+    content: '';
+    background-size: cover;
+    background: #22f067;
+    background-image: url(../img/TV.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 0;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    right: 0;
+    width: 33px;
+    height: 33px;
+} 
+
+.face-3::before {
+    display: block;
+    content: '';
+    background-size: cover;
+    background: #6022f0;
+    background-image: url(../img/cup.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 0;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    right: 0;
+    width: 33px;
+    height: 33px;
+} 
+.face-4::before {
+    display: block;
+    content: '';
+    background-size: cover;
+    background: #edf760;
+    background-image: url(../img/mail.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 0;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    right: 0;
+    width: 33px;
+    height: 33px;
+} 
 
 .container {
     max-width: 320px;
@@ -86,21 +135,19 @@ img {
 }
 
 
-.nav,
-.nav2 {
+.nav a,
+.nav2 a {
     font-size: 14px;
     font-family: "Montserrat";
     color: rgba(255, 255, 255, 0.795);
     font-weight: bold;
     text-align: center;
     padding: 10px;
-    border: 2px solid transparent;
+    text-decoration: none;
 }
 
-.nav:hover,
-.nav2:hover {
-    width: 94px;
-    height: 40px;
+.nav a:hover,
+.nav2 a:hover {
     border: 2px solid rgb(255, 255, 255);
     border-radius: 40px;
 
@@ -244,6 +291,9 @@ h2 {
     margin: 0 auto;
 }
 
+
+
+
 @media (min-width: 768px) {
     .wraper {
         max-width: 674px;
@@ -286,7 +336,6 @@ h2 {
      }
 
     .cards {
-         width: 474px;
          margin: 0 auto;
          height: 532px;
     }
@@ -302,7 +351,7 @@ h2 {
     }
 }
 
-    @media (min-width: 1440px) {
+    @media (min-width: 940px) {
 
         .wraper {
             max-width: 942px;
