@@ -146,7 +146,10 @@ html {
     color: rgb(255, 255, 255);
     font-weight: bold;
     text-transform: uppercase;
-    text-align: center;  
+    text-align: center; 
+    justify-content: center;
+    display: flex;
+    margin: 0 auto; 
 }
 
 
@@ -209,18 +212,11 @@ html {
 }
 
 
-.features__baneer-title {
-    font-size: 14px;
-    font-family: "Montserrat";
+.features-info__subtitle {
+    font-size: 24px;
+    font-family: 'Kaushan Script', cursive;
     color: rgb(51, 51, 51);
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-
-.features__baneer-text {
-    font-family: "Roboto";
-    font-size: 13px;
-    color: rgb(153, 153, 153);
+    text-align: center;
 }
 
 .team__about {
