@@ -1,0 +1,150 @@
+.team-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 90px;
+
+  &__info {
+    font-size: 24px;
+    font-family: $Kaushan-font;
+    color: $grey-color;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: $title-size;
+    font-family: $Montserrat-font;
+    color: $grey-color;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+
+  &__title::after {
+    display: flex;
+    justify-content: center;
+    content: '';
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    background-color: $pink-color;
+    width: 60px;
+    height: 3px;
+    margin-bottom: 60px;
+  }
+
+  &__about {
+    width: 980px;
+    font-family: "Roboto";
+    font-size: 13px;
+    color: rgb(153, 153, 153);
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    position: relative;
+    width: 380px;
+    height: 546px;
+    list-style: none;
+
+    &:hover .soc {
+      opacity: 1;
+      top: -20px;
+      left: -20px;
+    }
+  }
+
+
+  &__item:hover &__picture {
+    top: -20px;
+    left: -20px;
+  }
+
+
+  &__wrap {
+    width: 380px;
+    height: 470px;
+    background-color: $aqua-color;
+    margin-bottom: 30px;
+  }
+
+  &__picture {
+    width: 380px;
+    height: 470px;
+    position: absolute;
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+// SOC
+
+
+.soc {
+  background-image: linear-gradient(45deg, rgba(252, 227, 138, 0.6), rgba(243, 129, 129, 0.6));
+  width: 380px;
+  height: 470px;
+  position: absolute;
+  top: 0;
+  padding-top: 218px;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.soc-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.soc-item {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $yellow-color;
+
+  &:hover {
+    background-color: $rows-color;
+  }
+
+  &__icon {
+    fill: $rows-color;
+
+  }
+
+  &:hover &__icon {
+    fill: $white-color;
+  }
+
+}
+
+
+/* INNER */
+
+
+.team-inner {
+  text-align: center;
+
+  &__name {
+    font-size: $min-size;
+    font-family: $Montserrat-font;
+    color: $grey-color;
+    text-transform: uppercase;
+  }
+
+  &__about {
+    font-size: 15px;
+    font-family: $Roboto-font;
+    color: rgb(153, 153, 153);
+  }
+}

@@ -1,0 +1,65 @@
+.footer {
+  height: 62px;
+
+  &::before {
+    display: block;
+    content: '';
+    background-color: rgb(229, 229, 229);
+    width: 1200px;
+    height: 2px;
+  }
+}
+
+
+.footer-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  &__info {
+    font-size: $min-size;
+    font-family: $Montserrat-font;
+    color: $grey-color;
+    line-height: 1.2;
+    width: 310px;
+    margin: 0;
+  }
+
+  &__span {
+    font-size: $min-size;
+    font-family: $Montserrat-font;
+    color: $pink-color;
+  }
+}
+
+
+.search-form {
+  &__button {
+    background-color: $aqua-color;
+    width: 152px;
+    height: 40px;
+    margin: 0;
+    font-size: $min-size;
+    font-family: $Montserrat-font;
+    color: $white-color;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__input {
+    width: 230px;
+    height: 40px;
+    padding-left: 10px;
+  }
+
+  &__input::placeholder {
+    font-size: 15px;
+    font-family: $Roboto-font;
+    color: rgb(204, 204, 204);
+    font-style: italic;
+  }
+  
+}

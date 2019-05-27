@@ -1,0 +1,416 @@
+@import './helpers/variables.scss';
+@import './normalize';
+@import './components/container.scss';
+@import './header.scss';
+@import './base.scss';
+@import './components/main.scss';
+@import './features.scss';
+@import './team.scss';
+@import './footer.scss';
+
+// * {
+//   margin: 0;
+//   padding: 0;
+// }
+
+// html {
+//   box-sizing: border-box;
+// }
+
+// *,
+// *::before,
+// *::after {
+//   box-sizing: inherit;
+// }
+
+// .container {
+//   width: 1200px;
+//   margin: 0 auto;
+//   padding: 0;
+// }
+
+
+// .page-header {
+//   background: linear-gradient(to top right, rgba(252, 227, 138, 0.8), rgba(243, 129, 129, 0.8)), url(../img/picture@2x.png);
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+//   padding-top: 30px;
+//   padding-bottom: 228px;
+// }
+
+
+// .site-logo {
+//   background-size: contain;
+// }
+
+
+// /* PAGE-NAV */
+
+// .site-navigation {
+//   width: 500px;
+// }
+
+// .page-nav {
+//   width: 1200px;
+//   height: 55px;
+//   display: flex;
+//   justify-content: space-between;
+//   flex-direction: row;
+//   align-items: flex-end;
+//   margin: 0 auto;
+// }
+
+// .list {
+//   display: flex;
+//   list-style: none;
+//   justify-content: space-between;
+//   text-decoration: none;
+// }
+
+// /* SITE-NAVIGATION */
+
+// .site-navigation__link {
+//   display: block;
+//   text-decoration: none;
+//   position: relative;
+//   font-size: 14px;
+//   font-family: 'Montserrat', sans-serif;
+//   font-weight: bold;
+//   color: rgb(255, 255, 255);
+//   text-transform: uppercase;
+// }
+
+
+// .site-navigation__link::after {
+//   display: none;
+//   content: "";
+//   top: 10px;
+//   width: 100%;
+//   height: 3px;
+//   background-color: #fce38a;
+//   margin-top: 12px;
+//   position: absolute;
+// }
+
+// .site-navigation__link:hover {
+//   color: #fce38a;
+// }
+
+// .site-navigation__link:hover::after {
+//   display: block;
+//   color: rgb(243, 129, 129);
+// }
+
+// .site-navigation__icon {
+//   width: 15px;
+//   height: 15px;
+// }
+
+
+// /* BANNER */
+
+// .banner {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+// .baner__site {
+//   margin-top: 180px;
+// }
+
+
+// .banner__info {
+//   font-size: 72px;
+//   font-family: 'Kaushan Script', cursive;
+//   color: rgb(255, 255, 255);
+//   line-height: 1.2;
+//   text-align: center;
+//   margin-bottom: 56px;
+// }
+
+
+// .banner__name {
+//   font-size: 150px;
+//   font-family: 'Montserrat', sans-serif;
+//   color: rgb(255, 255, 255);
+//   font-weight: bold;
+//   line-height: 1;
+//   text-transform: uppercase;
+//   text-align: center;
+//   margin: 0 auto 120px;
+// }
+
+// .banner-button {
+//   border-style: solid;
+//   border-width: 3px;
+//   border-color: rgb(255, 255, 255);
+//   background-color: rgba(0, 0, 0, 0);
+//   width: 164px;
+//   height: 44px;
+//   font-size: 14px;
+//   font-family: "Montserrat";
+//   color: rgb(255, 255, 255);
+//   font-weight: bold;
+//   text-transform: uppercase;
+//   text-align: center;
+//   justify-content: center;
+//   display: flex;
+//   margin: 0 auto;
+// }
+
+
+// /* FEATURES */
+
+// .main {
+//   padding-top: 58px;
+//   margin-bottom: 84px;
+// }
+
+// .info {
+//   font-size: 24px;
+//   font-family: 'Kaushan Script', cursive;
+//   color: rgb(51, 51, 51);
+//   text-align: center;
+// }
+
+// .features-baneer__icon {
+//   width: 30px;
+//   height: 30px;
+//   margin-right: 25px;
+// }
+
+
+// .title {
+//   font-size: 30px;
+//   font-family: 'Montserrat', sans-serif;
+//   color: rgb(51, 51, 51);
+//   font-weight: bold;
+//   text-transform: uppercase;
+//   text-align: center;
+// }
+
+// .title::after {
+//   display: flex;
+//   justify-content: center;
+//   content: '';
+//   text-align: center;
+//   margin: 0 auto;
+//   margin-top: 40px;
+//   background-color: rgb(243, 129, 129);
+//   width: 60px;
+//   height: 3px;
+//   margin-bottom: 60px;
+// }
+
+// .features__list {
+//   flex-wrap: wrap;
+// }
+
+// .features__item {
+//   display: flex;
+//   width: 340px;
+// }
+
+// .features__item:nth-child(-n+3) {
+//   margin-bottom: 100px;
+// }
+
+
+// .features-info__subtitle {
+//   font-size: 24px;
+//   font-family: 'Kaushan Script', cursive;
+//   color: rgb(51, 51, 51);
+//   text-align: center;
+// }
+
+// .team__about {
+//   width: 980px;
+//   font-family: "Roboto";
+//   font-size: 13px;
+//   color: rgb(153, 153, 153);
+//   text-align: center;
+//   margin: 0 auto;
+// }
+
+// .features,
+// .team__banner-about {
+//   margin-bottom: 90px;
+// }
+
+// /* TEAM */
+// .team__list {
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+// .team__item {
+//   position: relative;
+//   width: 380px;
+//   height: 546px;
+//   list-style: none;
+// }
+
+
+// .photo__wrap {
+//   width: 380px;
+//   height: 470px;
+//   background-color: #95e1d3;
+//   margin-bottom: 30px;
+// }
+
+// .photo__picture {
+//   width: 380px;
+//   height: 470px;
+//   position: absolute;
+//   transition: all 0.2s ease-in-out;
+// }
+
+
+// .soc__wrap {
+//   background-image: linear-gradient(45deg, rgba(252, 227, 138, 0.6), rgba(243, 129, 129, 0.6));
+//   width: 380px;
+//   height: 470px;
+//   position: absolute;
+//   top: 0;
+//   padding-top: 218px;
+//   opacity: 0;
+//   transition: all 0.2s ease-in-out;
+// }
+
+
+// .soc__icon {
+//   width: 55px;
+//   height: 55px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background-color: #fce38a;
+// }
+
+// .soc__list {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   list-style: none;
+// }
+
+// .features__icon {
+//   fill: #f38181;
+
+// }
+
+// .team__item:hover .photo__picture {
+//   top: -20px;
+//   left: -20px;
+// }
+
+// .team__item:hover .soc__wrap {
+//   opacity: 1;
+//   top: -20px;
+//   left: -20px;
+// }
+
+// .soc__icon:hover .features__icon {
+//   fill: #ffffff;
+// }
+
+// .soc__icon:hover {
+//   background-color: #f38181;
+// }
+
+// .team__inner {
+//   text-align: center;
+// }
+
+
+// /* INNER */
+
+// .team__inner-name {
+//   font-size: 14px;
+//   font-family: 'Montserrat', sans-serif;
+//   color: rgb(51, 51, 51);
+//   text-transform: uppercase;
+// }
+
+// .eam__inner-about {
+//   font-size: 15px;
+//   font-family: "Roboto", sans-serif;
+//   color: rgb(153, 153, 153);
+// }
+
+// /* FOOOTER */
+
+// .footer {
+//   width: 1200px;
+//   margin: 0 auto;
+//   justify-content: space-between;
+//   height: 62px;
+// }
+
+// span {
+//   font-size: 14px;
+//   font-family: "Montserrat";
+//   color: rgb(243, 129, 129);
+// }
+
+
+// .search__form-button {
+//   height: 62px;
+//   right: 0;
+//   top: 30%;
+// }
+
+
+// .footer__info {
+//   font-size: 14px;
+//   font-family: "Montserrat";
+//   color: rgb(51, 51, 51);
+//   line-height: 1.2;
+//   width: 310px;
+//   margin: 0;
+// }
+
+
+// .footer::before {
+//   display: block;
+//   content: '';
+//   background-color: rgb(229, 229, 229);
+//   width: 1200px;
+//   height: 2px;
+// }
+
+// .search__form-input {
+//   width: 230px;
+//   height: 40px;
+//   padding-left: 10px;
+// }
+
+
+// .search__form-button {
+//   background-color: #95e1d3;
+//   width: 152px;
+//   height: 40px;
+//   margin: 0;
+//   font-size: 14px;
+//   font-family: "Montserrat";
+//   color: rgb(255, 255, 255);
+//   font-weight: bold;
+//   text-transform: uppercase;
+//   text-align: center;
+// }
+
+// .search__form-input::placeholder {
+//   font-size: 15px;
+//   font-family: "Roboto";
+//   color: rgb(204, 204, 204);
+//   font-style: italic;
+// }
+
+// .page__footer {
+//   display: flex;
+//   justify-content: space-between;
+//   margin-top: 10px;
+//   margin-bottom: 10px;
+// }
