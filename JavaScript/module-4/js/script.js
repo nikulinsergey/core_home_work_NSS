@@ -10,44 +10,45 @@ const Priority = {
 
 
 const notepad = {
-  notes: [],
-  getNotes() {
-    return this.notes;
-    /*
-     * Принимает: ничего
-     * Возвращает: все заметки, значение свойства notes
-     */
-  },
-  findNoteById(id) {
+    notes: [],
+    getNotes() {
+      return this.notes;
+      /*
+       * Принимает: ничего
+       * Возвращает: все заметки, значение свойства notes
+       */
+    },
+    findNoteById(id) {
 
-    for(let key of this.notes) {
-      if(key.id === id){
-        return key;
+      for (let key of this.notes) {
+        if (key.id === id) {
+          return key;
+        }
       }
-    }
-    
-    /*
-     * Ищет заметку в массиве notes
-     *
-     * Принимает: идентификатор заметки
-     * Возвращает: заметку с совпавшим полем id или undefined если ничего не найдено
-     */
-  },
-  saveNote(note) {
 
-    this.notes.push(note);
-    /*
-     * Сохраняет заметку в массив notes
-     *
-     * Принимает: объект заметки
-     * Возвращает: сохраненную заметку
-     */
-  },
-  deleteNote(id) {
-    for(let i = 0; i < this.notes.length; i ++ ){
-      this.notes.splice(i, 1);
-    }
+      /*
+       * Ищет заметку в массиве notes
+       *
+       * Принимает: идентификатор заметки
+       * Возвращает: заметку с совпавшим полем id или undefined если ничего не найдено
+       */
+    },
+    saveNote(note) {
 
+      this.notes.push(note);
+      /*
+       * Сохраняет заметку в массив notes
+       *
+       * Принимает: объект заметки
+       * Возвращает: сохраненную заметку
+       */
+    },
+    deleteNote(id) {
+      for (let i = 0; i < this.notes.length; i++) {
+        if(this.notes[i].id === id) {
+          this.notes.splice(i, 1);
+        };
+      };  
     /*
      * Удаляет заметку по идентификатору из массива notes
      *
@@ -56,33 +57,33 @@ const notepad = {
      */
   },
   updateNoteContent(id, updatedContent) {
-
-    for(let key of this.notes){
-      if(key.id === id){
+    for (let elem of this.notes) {
+      if (elem.id === id) {
         this.notes = {
-        ...this.notes,
-        ...updatedContent
-        }
-      }
-    } 
-    return this.notes;
-    /*
-     * Обновляет контент заметки
-     * updatedContent - объект с полями вида {имя: значение, имя: значение}
-     * Свойств в объекте updatedContent может быть произвольное количество
-     *
-     * Принимает: идентификатор заметки и объект, полями которого надо обновить заметку
-     * Возвращает: обновленную заметку
-     */
-  },
-  updateNotePriority(id, priority) {
-
-    for(let i = 0; i < this.notes.length; i ++){
-      if(this.notes[i].id === id){
-        this.notes[i].priority = priority;
-        return this.notes[i];
+          ...elem,
+          ...updatedContent
+        };
+        return elem;
       }
     }
+    // Object.assign(this.findById(id), updatedContent)
+  },
+  /*
+   * Обновляет контент заметки
+   * updatedContent - объект с полями вида {имя: значение, имя: значение}
+   * Свойств в объекте updatedContent может быть произвольное количество
+   *
+   * Принимает: идентификатор заметки и объект, полями которого надо обновить заметку
+   * Возвращает: обновленную заметку
+   */
+  updateNotePriority(id, priority) {
+
+    for (let i = 0; i < this.notes.length; i++) {
+      if (this.notes[i].id === id) {
+        this.notes[i].priority = priority;
+        return this.notes[i];
+      };
+    };
     /*
      * Обновляет приоритет заметки
      *
@@ -94,32 +95,32 @@ const notepad = {
 
     const arr = [];
 
-    for(let i = 0; i < this.notes.length; i ++){
+    for (let i = 0; i < this.notes.length; i++) {
       const titleToLowerCase = this.notes[i].title.toLowerCase();
       const bodyToLowerCase = this.notes[i].body.toLowerCase();
-      if(titleToLowerCase.includes(query) || bodyToLowerCase.includes(query)){
+      if (titleToLowerCase.includes(query) || bodyToLowerCase.includes(query)) {
         arr.push(this.notes[i])
       }
     }
     return arr;
   },
-    
-    /*
-     * Фильтрует массив заметок по подстроке query.
-     * Если значение query есть в заголовке или теле заметки - она подходит
-     *
-     * Принимает: подстроку для поиска в title и body заметки
-     * Возвращает: новый массив заметок, контент которых содержит подстроку
-     */
+
+  /*
+   * Фильтрует массив заметок по подстроке query.
+   * Если значение query есть в заголовке или теле заметки - она подходит
+   *
+   * Принимает: подстроку для поиска в title и body заметки
+   * Возвращает: новый массив заметок, контент которых содержит подстроку
+   */
   filterNotesByPriority(priority) {
 
-   const arr2 = [];
-   for(let i = 0; i < this.notes.length; i ++){
-     if(this.notes[i].priority === priority){
-       arr2.push(this.notes[i]);
-     }
-   }
-   return arr2;
+    const arr2 = [];
+    for (let i = 0; i < this.notes.length; i++) {
+      if (this.notes[i].priority === priority) {
+        arr2.push(this.notes[i]);
+      }
+    }
+    return arr2;
     /*
      * Фильтрует массив заметок по значению приоритета
      * Если значение priority совпадает с приоритетом заметки - она подходит
@@ -137,32 +138,29 @@ const notepad = {
 notepad.saveNote({
   id: 'id-1',
   title: 'JavaScript essentials',
-  body:
-    'Get comfortable with all basic JavaScript concepts: variables, loops, arrays, branching, objects, functions, scopes, prototypes etc',
+  body: 'Get comfortable with all basic JavaScript concepts: variables, loops, arrays, branching, objects, functions, scopes, prototypes etc',
   priority: Priority.HIGH,
 });
 
 notepad.saveNote({
   id: 'id-2',
   title: 'Refresh HTML and CSS',
-  body:
-    'Need to refresh HTML and CSS concepts, after learning some JavaScript. Maybe get to know CSS Grid and PostCSS, they seem to be trending.',
+  body: 'Need to refresh HTML and CSS concepts, after learning some JavaScript. Maybe get to know CSS Grid and PostCSS, they seem to be trending.',
   priority: Priority.NORMAL,
 });
 
 notepad.saveNote({
   id: 'id-3',
   title: 'Get comfy with Frontend frameworks',
-  body:
-    'First must get some general knowledge about frameworks, then maybe try each one for a week or so. Need to choose between React, Vue and Angular, by reading articles and watching videos.',
+  body: 'First must get some general knowledge about frameworks, then maybe try each one for a week or so. Need to choose between React, Vue and Angular, by reading articles and watching videos.',
   priority: Priority.NORMAL,
 });
+
 
 notepad.saveNote({
   id: 'id-4',
   title: 'Winter clothes',
-  body:
-    "Winter is coming! Need some really warm clothes: shoes, sweater, hat, jacket, scarf etc. Maybe should get a set of sportwear as well so I'll be able to do some excercises in the park.",
+  body: "Winter is coming! Need some really warm clothes: shoes, sweater, hat, jacket, scarf etc. Maybe should get a set of sportwear as well so I'll be able to do some excercises in the park.",
   priority: Priority.LOW,
 });
 
