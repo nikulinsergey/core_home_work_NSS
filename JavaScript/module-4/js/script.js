@@ -20,9 +20,9 @@ const notepad = {
     },
     findNoteById(id) {
 
-      for (let key of this.notes) {
-        if (key.id === id) {
-          return key;
+      for (let note of this.notes) {
+        if (note.id === id) {
+          return note;
         }
       }
 
@@ -35,7 +35,8 @@ const notepad = {
     },
     saveNote(note) {
 
-      this.notes.push(note);
+
+      return this.notes.push(note);
       /*
        * Сохраняет заметку в массив notes
        *
@@ -59,7 +60,7 @@ const notepad = {
   updateNoteContent(id, updatedContent) {
     for (let elem of this.notes) {
       if (elem.id === id) {
-        this.notes = {
+        elem = {
           ...elem,
           ...updatedContent
         };
