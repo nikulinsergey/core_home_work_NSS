@@ -38,7 +38,9 @@ class Notepad {
 
 
   saveNote(note) {
-    return this._notes.push(note);
+    this._notes.push(note);
+    
+    return note;
     /*
      * Сохраняет заметку в массив notes
      *

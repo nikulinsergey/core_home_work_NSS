@@ -90,10 +90,7 @@ const users = [
 
 // 1
 
-const getAllNames = users => {
-  const arr = users.map(user => user.name)
-  return arr;
-};
+const getAllNames = users => users.map(user => user.name);
 
 console.log(getAllNames(users));
 // [ 'Moore Hensley', 'Sharlene Bush', 'Ross Vazquez', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony' ]
@@ -101,43 +98,31 @@ console.log(getAllNames(users));
 
 // 2
 
-const getUsersByEyeColor = (users, color) => {
-  const arr = [];
-  users.filter(user => user.eyeColor === color ? arr.push(user) : null)
-  return arr;
-};
-
+const getUsersByEyeColor = (users, color) => 
+users.filter(user => user.eyeColor === color).map( user => user.name);
 console.log(getUsersByEyeColor(users, 'blue')); // [объект Moore Hensley, объект Sharlene Bush, объект Carey Barr]
 
 
 // 3
 
 
-const getUsersByGender = (users, gender) => {
-  const arr = [];
-  users.filter(user => user.gender === gender ? arr.push(user.name) : null)
-  return arr;
-};
+const getUsersByGender = (users, gender) => 
+  users.filter(user => user.gender === gender).map(user => user.name);
 
 console.log(getUsersByGender(users, 'male')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
 
 // 4
 
-const getInactiveUsers = users => {
-  const arr = [];
-  users.filter(user => !user.isActive ? arr.push(`обьект ${user.name}`) : null)
-  return arr;
-};
+const getInactiveUsers = users =>
+  users.filter(user => !user.isActive).map(user => `обьект ${user.name}`);
 
 console.log(getInactiveUsers(users)); // [объект Moore Hensley, объект Ross Vazquez, объект Blackburn Dotson]
 
 
 // 5
 
-const getUserByEmail = (users, email) => {
-   const user = users.find(user => user.email === email);
-   return user;
-};
+const getUserByEmail = (users, email) =>
+   users.find(user => user.email === email);
 
 console.log(getUserByEmail(users, 'shereeanthony@kog.com')); // {объект пользователя Sheree Anthony}
 console.log(getUserByEmail(users, 'elmahead@omatom.com')); // {объект пользователя Elma Head}
@@ -146,10 +131,8 @@ console.log(getUserByEmail(users, 'elmahead@omatom.com')); // {объект по
 // 6
 
 
-const getUsersWithAge = (users, min, max) => {
-  let ageArr = users.filter(el => el.age >= min && el.age <= max);  
-  return ageArr;
-};
+const getUsersWithAge = (users, min, max) => 
+  users.filter(el => el.age >= min && el.age <= max);  
 
 console.log(getUsersWithAge(users, 20, 30)); // [объект Ross Vazquez, объект Elma Head, объект Carey Barr]
 
@@ -159,20 +142,18 @@ console.log(getUsersWithAge(users, 30, 40));
 
 // 7
 
-const getTotalBalance = users => {
-  const summ = users.reduce((totalBalance, user) => totalBalance + user.balance, 0);
-  return summ;
-};
+const getTotalBalance = users => 
+  users.reduce((totalBalance, user) => totalBalance + user.balance, 0);
 
 console.log(getTotalBalance(users)); // 20916
 
 
 // 8
 
-const getUsersByFriend = (users, name) => {
-const friend = users.filter(el => el.friends.includes(name))
-return friend;
-};
+const getUsersByFriend = (users, name) => 
+users.filter(user => user.friends.includes(name)).map(user => user.name);
+
+  // users.filter(el => el.friends.includes(name));
 
 console.log(getUsersByFriend(users, 'Briana Decker')); // [ 'Sharlene Bush', 'Sheree Anthony' ]
 console.log(getUsersByFriend(users, 'Goldie Gentry')); // [ 'Elma Head', 'Sheree Anthony' ]
